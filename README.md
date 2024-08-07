@@ -31,3 +31,27 @@ To create a program in Python that performs the following:
      3.2 Mean and standard deviation of Student_Count_Total for non-High Schools 
   
      3.3 Distribution of starting hours for all schools d. Number of schools outside of the Loop Neighborhood (i.e., outside of zip codes 60601,60602, 60603, 60604, 60605, 60606, 60607, and 60616)
+
+# Explaination
+
+1.The code starts by importing the pandas library, which will be used to work with data in a tabular format. 
+
+2. Then we used the pandas data frame to load the "cps.csv" file.
+
+3. We have used the "Grades_Offered_All" column to extract the lowest and highest grades offered by each school and adds them as new columns in the data frame. 
+
+4. Then we have defined a function called "school_start_hours" that extracts the starting hour from the "School_Hours" column for each row in the data frame. The function is applied to each row using the apply() method, and the resulting values are added to a new column called "Starting Hour".
+
+5. Then we have replaced the missing values in the "College_Enrollment_Rate_School" column with the mean value of the column. 
+
+6. It creates a new data frame containing only the columns required for output and displays the first 10 rows in the required format. 
+
+7. We have calculated the mean and standard deviation of college enrollment rates for high schools, using Boolean indexing to select only the high schools from the data frame. 
+
+8. In the similar way we have calculated the mean and standard deviation of total student count for non-high schools, using Boolean indexing to select only the non-high schools from the data frame. 
+
+9. We have prints out a distribution of starting hours for schools, using a list of hours to count the number of schools starting at each hour. 
+
+10. Finally, calculated the number of schools outside of the Loop area (specified by a list of zip codes), using Boolean indexing to select only the schools with zip codes outside of the Loop.
+
+11. The number of such schools is printed to the console.
